@@ -1,6 +1,30 @@
+.container-fluid {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row,
+.col {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
 .content{
   margin-bottom: 300px;
 }
+
+.navbar-brand{
+  margin-left: 3%;
+}
+
+.landing-page {
+  height: 80vh;
+}
+.link-icons{
+  font-size: 3em;
+}
+
 
 .tech-card{
   position: relative;
@@ -15,6 +39,10 @@
 }
 
 
+
+
+
+/* Hexagon */
 .hex-main {
   margin-top: 35px;
   margin-left: 110px;
@@ -34,13 +62,10 @@
     /* horizontal margin */
     --f: calc(2*var(--s) + 4*var(--m) - 2*var(--vc) - 2px);
 }
-
 .hex-container {
   font-size: 0;
   /* disable white space between inline block element */
-
 }
-
 .hex-container div {
   width: var(--s);
   margin: var(--m) var(--mh);
@@ -51,7 +76,6 @@
   margin-bottom: calc(var(--m) - var(--vc));
   background-color: blueviolet;
   box-shadow: 0px 0px 20px 10px rgb(33, 139, 232);
-
 }
 .hex-container::before {
   content: "";
@@ -61,9 +85,5 @@
     shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px), #000 0 var(--f));
 }
 
-.hex-container {
-  font-size: 0;
-  /* disable white space between inline block element */
-}
 
 
