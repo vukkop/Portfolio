@@ -11,78 +11,59 @@
   background-blend-mode:color-dodge;
   border: none;
   box-shadow: 0px 0px 20px 10px rgb(33, 139, 232);
+
 }
-
-.hexagon {
-  top: 176px;
-  left: 408px;
-  position: relative;
-  width: 80px;
-  height: 122px;
-
-  border: 1px #000 solid;
-    background-blend-mode: color-dodge;
-}
-.hexagon:hover {
-  box-shadow: 0px 0px 30px 10px rgb(33, 139, 232);
-}
-
-.hexagon:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -30px;
-  width: 0px;
-  height: 0px;
-  border-right: 30px solid #000;
-  border-top: 61px solid transparent;
-  border-bottom: 61px solid transparent;
-      background-blend-mode: color-dodge;
-}
-
-.hexagon:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: -30px;
-  width: 0px;
-  height: 0px;
-  border-left: 30px solid #000;
-  border-top: 61px solid transparent;
-  border-bottom: 61px solid transparent;
-        background-blend-mode: color-dodge;
-}
-
-
-
 
 
 .hex-main {
+  margin-top: 35px;
+  margin-left: 110px;
   display: flex;
-  /* we will talk about this later ... */
-  --s: 130px;
-  /* size  */
-  --m: 4px;
-  /* margin */
+    --s: 140px;
+    /* size  */
+    --r: 1;
+    /* ratio */
+
+    /* clip-path parameter */
+    --hc: 3px;
+    --vc: 60px;
+
+    --m: 1px;
+    /* vertical margin */
+    --mh: calc(var(--m) + (var(--s) - 2*var(--hc))/2);
+    /* horizontal margin */
+    --f: calc(2*var(--s) + 4*var(--m) - 2*var(--vc) - 2px);
+}
+
+.hex-container {
+  font-size: 0;
+  /* disable white space between inline block element */
+
+}
+
+.hex-container div {
+  width: var(--s);
+  margin: var(--m) var(--mh);
+  height: calc(var(--s)*var(--r));
+  display: inline-block;
+  font-size: initial;
+  clip-path: polygon(0% 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0%, 25% 0%);
+  margin-bottom: calc(var(--m) - var(--vc));
+  background-color: blueviolet;
+  box-shadow: 0px 0px 20px 10px rgb(33, 139, 232);
+
+}
+.hex-container::before {
+  content: "";
+    width: calc(var(--s)/2 + var(--mh));
+    float: left;
+    height: 100%;
+    shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px), #000 0 var(--f));
 }
 
 .hex-container {
   font-size: 0;
   /* disable white space between inline block element */
 }
-
-.hex-container div {
-  width: var(--s);
-  margin: var(--m);
-  height: calc(var(--s) * 0.85);
-  display: inline-block;
-  font-size: initial;
-  /* we reset the font-size if we want to add some content */
-  clip-path: polygon(0% 50%, 25% 100%, 75% 100%, 100% 50% ,75% 0%, 25% 0%);
-  background-color: blueviolet;
-  box-shadow: 0px 0px 20px 10px rgb(33, 139, 232);
-}
-
-
 
 
