@@ -13,9 +13,23 @@
 .content{
   margin-bottom: 300px;
 }
-
 .navbar-brand{
   margin-left: 3%;
+}
+.navbar-toggler{
+  margin-right: 3%;
+}
+
+.landing-page-heading{
+  /* align-self: center; */
+  padding-top: 10%;
+  font-size: 3rem;
+}
+.typed-cursor{
+    font-size: 1.3em;
+}
+.typed-cursor,#autoTyped{
+  color: #d4d47d
 }
 
 .landing-page {
@@ -23,6 +37,10 @@
 }
 .link-icons{
   font-size: 3em;
+}
+.link-icons:hover{
+  transition: 500ms;
+  color: #fff;
 }
 
 
@@ -86,4 +104,8 @@
 }
 
 
+/* Utility classes */
 
+.pointer:hover{
+  cursor: pointer;
+}
