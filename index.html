@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-primary">
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">VK</a>
@@ -40,25 +41,33 @@
 
 
   <div class="container content">
+    <!-- Landing page -->
     <div class="row landing-page mt-4">
-      <div class="col-9 landing-page-heading">
-        <h3 class="text-light-emphasis">Pleasure to meet you</h3>
-        <h2 class="text-info">I build <span onclick="onTypingPaused()" id="autoTyped" class="pointer"></span><br>
-          that meet your needs</h2>
+      <div class="col-9 col-l">
+        <div>
+          <h3 class="text-light-emphasis landing-page-heading">Pleasure to meet you</h3>
+          <h2 class="text-info landing-page-heading">I build <span onclick="onTypingPaused()" id="autoTyped"
+              class="pointer"></span><br>
+            that meet your needs</h2>
+        </div>
+        <a class="nav-link link-icons arrow" href="#">
+          <i class="bi bi-caret-down-fill"></i>
+        </a>
       </div>
       <div class="col-3 d-flex justify-content-around align-items-end">
-        <a class="nav-link link-icons" href="">
+        <a class="nav-link link-icons" href="mailto:koprivica.wolf@gmail.com">
           <i class="bi bi-envelope-fill"></i>
         </a>
-        <a class="nav-link link-icons" href="">
+        <a class="nav-link link-icons" href="https://github.com/vukkop">
           <i class="bi bi-github"></i>
         </a>
-        <a class="nav-link link-icons" href="">
+        <a class="nav-link link-icons" href="https://www.linkedin.com/in/vukkop/">
           <i class="bi bi-linkedin"></i>
         </a>
       </div>
     </div>
 
+    <!-- About me -->
     <div class="row mt-4">
       <h2 class="text-light-emphasis">
         About me
@@ -79,6 +88,7 @@
       </div>
     </div>
 
+    <!-- Technologies -->
     <div class="row mt-4">
       <h2 class="text-light-emphasis mb-4">Technologies I use</h2>
       <div class="card tech-card mt-4">
@@ -100,7 +110,7 @@
       </div>
     </div>
 
-
+    <!-- Projects -->
     <div class="row mt-4">
       <h2 class="text-light-emphasis mb-4">Projects</h2>
 
@@ -195,6 +205,7 @@
       </div>
     </div>
 
+    <!-- Contact -->
     <div class="row mt-4">
       <div class="col-4">
         <a href="#">
@@ -214,7 +225,7 @@
     </div>
   </div>
 
-
+  <!-- Footer -->
   <footer>
     <ul class="nav nav-pills justify-content-around">
       <li class="nav-item">
