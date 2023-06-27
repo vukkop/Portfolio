@@ -24,6 +24,15 @@
 .landing-page {
   height: 80vh;
 }
+.landing-background {
+  background-image: url(./assets/hex-textured-background-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  background-blend-mode: color-dodge;
+  border: none;
+  box-shadow: inset 0px -35px 50px 70px #1a1a1a
+}
 .col-l{
   display: flex;
   flex-direction: column;
@@ -46,30 +55,24 @@
 }
 .link-icons{
   font-size: 3em;
+  transition: 500ms;
 }
 .link-icons:hover{
-  transition: 500ms;
   color: #fff;
 }
 
 /* Technologies */
-.tech-card{
-  position: relative;
-  background-image: url(./assets/hex-textured-background-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 600px;
-  background-blend-mode:color-dodge;
-  border: none;
-  box-shadow: 0px 0px 20px 10px rgb(33, 139, 232);
+.tech-row{
+  height: fit-content;
 }
 
 /* Hexagon */
 .hex-main {
+  /* position: absolute;
   margin-top: 35px;
-  margin-left: 110px;
+  margin-left: 110px; */
   display: flex;
-    --s: 140px;
+    --s: 160px;
     /* size  */
     --r: 1;
     /* ratio */
@@ -84,9 +87,12 @@
 }
 .hex-container {
   font-size: 0;
+  margin-bottom: 15%;
   /* disable white space between inline block element */
 }
 .hex-container div {
+  position: relative;
+  transition: 1000ms;
   width: var(--s);
   margin: var(--m) var(--mh);
   height: calc(var(--s)*var(--r));
@@ -94,15 +100,27 @@
   font-size: initial;
   clip-path: polygon(0% 50%, 25% 100%, 75% 100%, 100% 50%, 75% 0%, 25% 0%);
   margin-bottom: calc(var(--m) - var(--vc));
-  background-color: blueviolet;
-  box-shadow: 0px 0px 20px 10px rgb(33, 139, 232);
+  border: none;
+  background-color: #00eaff00;
+  box-shadow: inset 0px 0px 30px 30px #1c46ff1a;
+}
+.hex-container div:hover {
+  scale: 1.2;
+  color: #fff;
+  box-shadow: inset 0px 0px 30px 30px #1c46ff5e;
 }
 .hex-container::before {
   content: "";
-    width: calc(var(--s)/2 + var(--mh));
-    float: left;
-    height: 100%;
-    shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px), #000 0 var(--f));
+  width: calc(var(--s)/2 + var(--mh));
+  float: left;
+  height: 100%;
+  shape-outside: repeating-linear-gradient(#0000 0 calc(var(--f) - 3px), #000 0 var(--f));
+}
+.icon-hex{
+  position: absolute;
+  top: 42px;
+  left: 45px;
+  font-size: 5rem;
 }
 
 
