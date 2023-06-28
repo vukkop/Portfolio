@@ -45,7 +45,7 @@ function onTypingPaused() {
         formEmail.email = document.getElementById('email').value
         formEmail.message = document.getElementById('message').value
 
-        window.open(`mailto:kicans@gmail.com
+        window.open(`mailto:koprivica.wolf@gmail.com
         ?subject=Portfolio Contact Form
         &body=Name: ${formEmail.name}
               Message: ${formEmail.message}

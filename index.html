@@ -12,7 +12,7 @@
 </head>
 <body class="bg-primary">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+  <nav class="navbar navbar-expand-md bg-primary text-center" data-bs-theme="dark" role="navigation">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">VK</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -20,7 +20,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav p-3">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
@@ -193,13 +193,14 @@
 
     <!-- Contact Form-->
 
-    <form autocomplete="off" class="row mt-4 needs-validation" novalidate>
+    <form class="row mt-4 needs-validation" novalidate autocomplete="off">
       <h2 class="text-light-emphasis mb-4">Contact</h2>
       <div class="col-6">
 
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control bg-dark" id="name" placeholder="First Last Name" required>
+          <input autocomplete="hiuguoygb" type="text" class="form-control bg-dark" id="name"
+            placeholder="First Last Name" required>
         </div>
 
         <div class="mb-3">
@@ -225,18 +226,27 @@
 
 
     <!-- Contact Links-->
-    <div class="row mt-4">
+    <div class="row text-center mt-4">
       <div class="col-4">
-        <a class="link-icons" href="#">
-          Email
+        <a class="nav-link link-icons" href="mailto:koprivica.wolf@gmail.com">
+          <i class="bi bi-envelope-fill large"></i>
+          <a class="link-icons" href="#">
+            Email
+          </a>
         </a>
       </div>
       <div class="col-4">
+        <a class="nav-link link-icons large" href="https://github.com/vukkop">
+          <i class="bi bi-github"></i>
+        </a>
         <a class="link-icons" href="#">
           GitHub
         </a>
       </div>
       <div class="col-4">
+        <a class="nav-link link-icons large" href="https://www.linkedin.com/in/vukkop/">
+          <i class="bi bi-linkedin"></i>
+        </a>
         <a class="link-icons" href="#">
           LinkedIn
         </a>
@@ -245,22 +255,22 @@
   </div>
 
   <!-- Footer -->
-  <footer>
+  <footer class="mt-4">
     <ul class="nav nav-pills justify-content-around">
       <li class="nav-item">
-        <a class="nav-link link-icons" href="#">Active</a>
+        <a class="nav-link link-icons" href="#">Home</a>
       </li>
       <li class="nav-item dropdown">
-        <a class="nav-link link-icons" href="#">Link</a>
+        <a class="nav-link link-icons" href="#">About Me</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link link-icons" href="#">Link</a>
+        <a class="nav-link link-icons" href="#">Projects</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link link-icons" href="#">Disabled</a>
+        <a class="nav-link link-icons" href="#">Contact</a>
       </li>
     </ul>
-    <div class="row bg-dark">
+    <div class="row bg-dark text-center">
       <h6 class="p-2 mt-1">All rights reserved</h6>
     </div>
   </footer>
