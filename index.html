@@ -51,7 +51,7 @@
                 class="pointer"></span><br>
               that meet your needs</h2>
           </div>
-          <a class="nav-link link-icons arrow" href="#">
+          <a class="nav-link link-icons arrow large" href="#">
             <i class="bi bi-caret-down-fill"></i>
           </a>
         </div>
@@ -129,10 +129,8 @@
         <div class="card border-secondary mb-3" style="max-width: 20rem;">
           <div class="card-header">M&R Solutions</div>
           <div class="card-body">
-            <h4 class="card-title">Secondary card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.
-            </p>
+            <video onmouseover="this.play()" onmouseout="this.pause();" src="assets/Videos/mnrsolutions.mp4"
+              muted="true"></video>
           </div>
           <div class="card-footer d-flex justify-content-between">
             <a class="link-icons" href="https://mnrsolutions.ca/" target="_blank">link</a>
@@ -147,7 +145,8 @@
         <div class="card border-secondary mb-3" style="max-width: 20rem;">
           <div class="card-header">Pac-Man</div>
           <div class="card-body">
-            <video onmouseover="this.play()" onmouseout="this.pause();" src="assets/Videos/pacman.mp4"></video>
+            <video onmouseover="this.play()" onmouseout="this.pause();" src="assets/Videos/pacman.mp4"
+              muted="true"></video>
           </div>
           <div class="card-footer d-flex justify-content-between">
             <a class="link-icons" href="https://vukkop.github.io/pac-man/" target="_blank">link</a>
@@ -162,7 +161,8 @@
         <div class="card border-secondary mb-3" style="max-width: 20rem;">
           <div class="card-header">Calculator</div>
           <div class="card-body">
-            <video onmouseover="this.play()" onmouseout="this.pause();" src="assets/Videos/calculator.mp4"></video>
+            <video onmouseover="this.play()" onmouseout="this.pause();" src="assets/Videos/calculator.mp4"
+              muted="true"></video>
           </div>
           <div class="card-footer d-flex justify-content-between">
             <a class="link-icons" href="https://vukkop.github.io/calculator/" target="_blank">link</a>
@@ -177,11 +177,8 @@
         <div class="card border-secondary mb-3" style="max-width: 20rem;">
           <div class="card-header">Ticking Clock</div>
           <div class="card-body">
-            <h4 class="card-title">Secondary card title</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-              card's
-              content.
-            </p>
+            <video onmouseover="this.play()" onmouseout="this.pause();" src="assets/Videos/ticking-click.mp4"
+              muted="true"></video>
           </div>
           <div class="card-footer d-flex justify-content-between">
             <a class="link-icons" href="https://vukkop.github.io/ticking-clock/" target="_blank">link</a>
@@ -194,7 +191,40 @@
     </div>
 
 
-    <!-- Contact -->
+    <!-- Contact Form-->
+
+    <form autocomplete="off" class="row mt-4 needs-validation" novalidate>
+      <h2 class="text-light-emphasis mb-4">Contact</h2>
+      <div class="col-6">
+
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control bg-dark" id="name" placeholder="First Last Name" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control bg-dark" id="email" placeholder="name@example.com" required>
+        </div>
+
+      </div>
+
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea autocomplete="false" class="form-control bg-dark" id="message" placeholder="Write me a message"
+            rows="5" required></textarea>
+        </div>
+      </div>
+
+      <div class="col-12 d-flex justify-content-end">
+        <button class="btn btn-m btn-outline-light" type="submit">Send Message</button>
+      </div>
+    </form>
+
+
+
+    <!-- Contact Links-->
     <div class="row mt-4">
       <div class="col-4">
         <a class="link-icons" href="#">
