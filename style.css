@@ -54,11 +54,13 @@
   vertical-align: bottom;
 }
 .link-icons{
-  font-size: 3em;
   transition: 500ms;
 }
 .link-icons:hover{
   color: #fff;
+}
+.large{
+  font-size: 3em;
 }
 
 /* Technologies */
@@ -121,6 +123,12 @@
   top: 42px;
   left: 45px;
   font-size: 5rem;
+}
+
+/* Projects */
+
+.card-body video{
+  width: 100%;
 }
 
 
