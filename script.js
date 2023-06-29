@@ -58,3 +58,25 @@ function onTypingPaused() {
   })
 })()
 
+
+
+// listening for sreen width change:
+
+// var width;
+//   // Insert values on load of page
+//   window.onload = function() {
+//       width = window.innerWidth;
+//   };
+
+//   // Change values when window is resized
+//   window.onresize = function() {
+
+//       // Setting the current height & width
+//       // to the elements
+//     width = window.innerWidth;
+//     var container = document.getElementById("techContainer")
+//     if (container && width < 517) {
+//       container.remove()
+//     }
+//     console.log(width);
+//   };

@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav p-2">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#aboutMe">About Me</a>
@@ -40,31 +40,44 @@
 
 
 
-  <div class="container content">
+  <div class="container">
     <!-- Landing page -->
     <div class="card landing-background mt-4">
       <div class="row landing-page">
-        <div class=" col-9 col-l">
+        <div class="col-12 col-l">
           <div>
-            <h3 class="text-light-emphasis landing-page-heading">Pleasure to meet you</h3>
-            <h2 class="text-info landing-page-heading">I build <span onclick="onTypingPaused()" id="autoTyped"
-                class="pointer"></span><br>
-              that meet your needs</h2>
+            <h1 class="myName mb-3">
+              My name is Vukasin Koprivica
+            </h1>
+            <h3 class="landing-page-heading">
+              Pleasure to meet you
+            </h3>
+            <h2 class="text-info landing-page-heading">
+              I build
+              <span onclick="onTypingPaused()" id="autoTyped" class="pointer"></span><br>
+              that meet your needs
+            </h2>
           </div>
-          <a class="nav-link link-icons arrow large" href="#aboutMe">
-            <i class="bi bi-caret-down-fill"></i>
-          </a>
         </div>
-        <div class="col-3 d-flex justify-content-around align-items-end">
-          <a class="nav-link link-icons" href="mailto:koprivica.wolf@gmail.com">
-            <i class="bi bi-envelope-fill large"></i>
-          </a>
-          <a class="nav-link link-icons large" href="https://github.com/vukkop" target="_blank">
-            <i class="bi bi-github"></i>
-          </a>
-          <a class="nav-link link-icons large" href="https://www.linkedin.com/in/vukkop/" target="_blank">
-            <i class="bi bi-linkedin"></i>
-          </a>
+
+        <div class="row">
+          <div class="col-4 col-md-6 col-lg-9 d-flex align-items-end">
+            <a class="nav-link link-icons arrow large" href="#aboutMe">
+              <i class="bi bi-caret-down-fill"></i>
+            </a>
+          </div>
+
+          <div class="col-8 col-md-6 col-lg-3 d-flex justify-content-around align-items-end">
+            <a class="nav-link link-icons" href="mailto:koprivica.wolf@gmail.com">
+              <i class="bi bi-envelope-fill large"></i>
+            </a>
+            <a class="nav-link link-icons large" href="https://github.com/vukkop" target="_blank">
+              <i class="bi bi-github"></i>
+            </a>
+            <a class="nav-link link-icons large" href="https://www.linkedin.com/in/vukkop/" target="_blank">
+              <i class="bi bi-linkedin"></i>
+            </a>
+          </div>
         </div>
 
       </div>
@@ -72,77 +85,109 @@
 
     <!-- About me -->
     <div id="aboutMe" class="row mt-5">
-      <h2 class="text-light-emphasis mt-3">
+      <h2 class="text-light-emphasis mt-3 mb-4">
         About me
       </h2>
-      <div class="col-7">
+      <div class="clearfix">
+        <img class="col-12 col-md-6 float-md-end mb-3 ms-md-3 about-img" src="assets/profile-photo-gs-c.jpg"
+          alt="Vukasin's photo">
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam eligendi molestiae iure porro ipsum,
-          exercitationem facere omnis! Rerum tempora dolore beatae, eos quo officiis quidem atque pariatur non, veniam
-          nisi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam eligendi molestiae iure porro
-          ipsum,
-          exercitationem
-          facere omnis! Rerum tempora dolore beatae, eos quo officiis quidem atque pariatur non, veniam nisi.
+          Welcome to my website! I'm Vukasin Koprivica, and I'm delighted to have you here.
         </p>
-        <a href="#contact" class="btn btn-outline-light">Contact</a>
-      </div>
-      <div class="col-5">
-        <img class="img-fluid" src="assets/profile-photo-gs-c.jpg" alt="Vukasin's photo">
+        <p>
+          I am a passionate about technology with one year of experience in Software Development and over 10 years
+          experience in Customer Service.
+          Throughout my career, I have been dedicated to provide people with best posible service now I strive to do the
+          same with Software.
+        </p>
+        <p>
+          I believe in the power of teamwork and colaboration on developing solutions for any type of issues. By
+          combining my expertise with a creative and innovative approach, I strive to make every task acivable and
+          easier.
+        </p>
+        <p>
+          My journey in Softwarte Development began when I realized that I can have more significant impact on peoples
+          lives with a little help of technology. Since then, I have had the privilege to work on developing softwares
+          for book libraries, stock management systems, bee hive tracker, transportation logistics system, websites and
+          many more. These experiences have not only strengthened my skills but also fueled my curiosity and desire
+          tocontinue growing.
+        </p>
+        <p>
+          On this website, I aim to share my knowledge and insights with you. I will be providing some exaples of my
+          work. My goal is to showcase my expetese and try to present you how I can make benefitial impact to you or yoy
+          business. I am excited to contribute to your journey and help you grow, become more eficient and afective.
+        </p>
+        <p>
+          When I'm not programming, you can find me hiking with my family and dogs, skiing, wakeboarding and
+          volonteering for comunity. I believe in the importance of maintaining a balanced lifestyle, as it enhances my
+          creativity and overall well-being.
+        </p>
+        <p>
+          Thank you for visiting my website. I hope you find it informative and inspiring. If you have any questions or
+          would like to collaborate, please don't hesitate to reach out. I look forward to connecting with you!
+        </p>
+        <a href="#contact" class="btn  btn-outline-light float-end">Contact</a>
       </div>
     </div>
+    <h2 class="text-light-emphasis mt-5">Technologies I use</h2>
+  </div>
 
-    <!-- Technologies -->
-    <div class="row tech-row mt-4">
-      <h2 class="text-light-emphasis mt-4">Technologies I use</h2>
 
-      <div class="hex-main">
-        <div class="hex-container mt-4">
-          <div>
-            <i class="fa-brands fa-html5 icon-hex html5"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-css3 icon-hex css3"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-square-js icon-hex"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-angular icon-hex"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-bootstrap icon-hex bootstrap"></i>
-          </div>
-          <div>
-            <i class="fa-brands fa-vuejs icon-hex vue"></i>
-          </div>
-          <div>
-            <svg class="icon-hex c" viewBox="204.925 153.577 757.617 860.543" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="m692.731 644.884c-21.472 38.044-62.317 63.952-109.231 63.952-46.68 0-87.291-25.441-108.764-63.252-10.503-18.438-16.572-39.444-16.572-62.084 0-69.32 56.016-125.336 125.336-125.336 46.213 0 86.592 25.207 108.298 62.551l109.464-63.018c-43.645-75.154-124.869-125.802-217.995-125.802-139.107 0-251.605 112.732-251.605 251.605 0 45.513 12.136 88.459 33.376 125.336 43.412 75.388 125.102 126.269 218.462 126.269 93.594 0 175.284-51.114 218.696-126.969zm138.406-120.901h-24.974v120.668h24.974zm55.316 0h-24.974v120.668h24.974z" />
-              <path d="m906.759 544.289h-120.668v24.974h120.668zm0 55.082h-120.668v24.974h120.668z" />
-            </svg>
-          </div>
-          <div>
-            <svg class="icon-hex ts" vxmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-              viewBox="0 0 32 32" xml:space="preserve">
-              <path
-                d="M0,16v16h32V0H0V16z M25.8,14.7c0.8,0.2,1.4,0.6,2,1.2c0.3,0.3,0.7,0.9,0.8,1c0,0-1.4,1-2.2,1.5c0,0-0.2-0.1-0.3-0.3c-0.4-0.6-0.8-0.9-1.5-0.9c-1-0.1-1.6,0.4-1.6,1.3c0,0.2,0,0.4,0.1,0.6c0.2,0.4,0.6,0.7,1.9,1.2c2.3,1,3.3,1.6,3.9,2.6c0.7,1,0.8,2.7,0.4,3.9c-0.5,1.3-1.8,2.2-3.5,2.5c-0.5,0.1-1.8,0.1-2.4,0c-1.3-0.2-2.5-0.9-3.3-1.7c-0.3-0.3-0.9-1.2-0.8-1.2c0,0,0.1-0.1,0.3-0.2s0.7-0.4,1.2-0.7l0.9-0.5l0.2,0.3c0.3,0.4,0.9,1,1.2,1.2c1,0.5,2.4,0.5,3.1-0.2c0.3-0.2,0.4-0.6,0.4-1c0-0.4,0-0.5-0.2-0.8c-0.2-0.4-0.8-0.7-2.2-1.3c-1.7-0.7-2.4-1.2-3-1.9c-0.4-0.5-0.7-1-0.9-1.6c-0.1-0.5-0.2-1.6-0.1-2c0.3-1.6,1.5-2.7,3.3-3C23.9,14.5,25.2,14.6,25.8,14.7L25.8,14.7z M18.3,16.1l0,1.3h-4.2v11.8h-2.9V17.4H7v-1.3c0-0.7,0-1.3,0-1.3c0,0,2.5,0,5.6,0l5.6,0L18.3,16.1z" />
-            </svg>
-          </div>
+  <!-- Technologies -->
+  <div class="row tech-row mt-4">
+
+    <div class="hex-main">
+      <div class="hex-container mt-4">
+        <div>
+          <i class="fa-brands fa-html5 icon-hex html5"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-css3 icon-hex css3"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-square-js icon-hex"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-angular icon-hex"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-bootstrap icon-hex bootstrap"></i>
+        </div>
+        <div>
+          <i class="fa-brands fa-vuejs icon-hex vue"></i>
+        </div>
+        <div>
+          <svg class="icon-hex c" viewBox="204.925 153.577 757.617 860.543" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="m692.731 644.884c-21.472 38.044-62.317 63.952-109.231 63.952-46.68 0-87.291-25.441-108.764-63.252-10.503-18.438-16.572-39.444-16.572-62.084 0-69.32 56.016-125.336 125.336-125.336 46.213 0 86.592 25.207 108.298 62.551l109.464-63.018c-43.645-75.154-124.869-125.802-217.995-125.802-139.107 0-251.605 112.732-251.605 251.605 0 45.513 12.136 88.459 33.376 125.336 43.412 75.388 125.102 126.269 218.462 126.269 93.594 0 175.284-51.114 218.696-126.969zm138.406-120.901h-24.974v120.668h24.974zm55.316 0h-24.974v120.668h24.974z" />
+            <path d="m906.759 544.289h-120.668v24.974h120.668zm0 55.082h-120.668v24.974h120.668z" />
+          </svg>
+        </div>
+        <div>
+          <svg class="icon-hex ts" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 32 32" xml:space="preserve">
+            <path
+              d="M0,16v16h32V0H0V16z M25.8,14.7c0.8,0.2,1.4,0.6,2,1.2c0.3,0.3,0.7,0.9,0.8,1c0,0-1.4,1-2.2,1.5c0,0-0.2-0.1-0.3-0.3c-0.4-0.6-0.8-0.9-1.5-0.9c-1-0.1-1.6,0.4-1.6,1.3c0,0.2,0,0.4,0.1,0.6c0.2,0.4,0.6,0.7,1.9,1.2c2.3,1,3.3,1.6,3.9,2.6c0.7,1,0.8,2.7,0.4,3.9c-0.5,1.3-1.8,2.2-3.5,2.5c-0.5,0.1-1.8,0.1-2.4,0c-1.3-0.2-2.5-0.9-3.3-1.7c-0.3-0.3-0.9-1.2-0.8-1.2c0,0,0.1-0.1,0.3-0.2s0.7-0.4,1.2-0.7l0.9-0.5l0.2,0.3c0.3,0.4,0.9,1,1.2,1.2c1,0.5,2.4,0.5,3.1-0.2c0.3-0.2,0.4-0.6,0.4-1c0-0.4,0-0.5-0.2-0.8c-0.2-0.4-0.8-0.7-2.2-1.3c-1.7-0.7-2.4-1.2-3-1.9c-0.4-0.5-0.7-1-0.9-1.6c-0.1-0.5-0.2-1.6-0.1-2c0.3-1.6,1.5-2.7,3.3-3C23.9,14.5,25.2,14.6,25.8,14.7L25.8,14.7z M18.3,16.1l0,1.3h-4.2v11.8h-2.9V17.4H7v-1.3c0-0.7,0-1.3,0-1.3c0,0,2.5,0,5.6,0l5.6,0L18.3,16.1z" />
+          </svg>
         </div>
       </div>
     </div>
+  </div>
+
+
+
+  <div class="container">
 
     <!-- Projects -->
-    <div id="projects" class="row mt-5">
-      <h2 class="text-light-emphasis mb-4 mt-3">Projects</h2>
+    <h2 class="text-light-emphasis mb-4 mt-5">Projects</h2>
+    <div id="projects" class="row project-card-row ">
 
-      <div class="col-3">
+      <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-center mb-3">
         <div class="card border-secondary mb-3" style="max-width: 20rem;">
           <div class="card-header">M&R Solutions</div>
           <div class="card-body">
             <video preload="metadata" onmouseover="this.play()" onmouseout="this.pause();"
-              src="assets/Videos/mnrsolutions.mp4" muted="true"></video>
+              src="assets/Videos/mnrsolutions.mp4" muted="muted"></video>
           </div>
           <div class="card-footer d-flex justify-content-between">
             <a class="link-icons" href="https://mnrsolutions.ca/" target="_blank">link</a>
@@ -153,12 +198,12 @@
         </div>
       </div>
 
-      <div class="col-3">
+      <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-center mb-3">
         <div class="card border-secondary mb-3" style="max-width: 20rem;">
           <div class="card-header">Pac-Man</div>
           <div class="card-body">
             <video preload="metadata" onmouseover="this.play()" onmouseout="this.pause();"
-              src="assets/Videos/pacman.mp4" muted="true"></video>
+              src="assets/Videos/pacman.mp4" muted="muted"></video>
           </div>
           <div class="card-footer d-flex justify-content-between">
             <a class="link-icons" href="https://vukkop.github.io/pac-man/" target="_blank">link</a>
@@ -169,12 +214,12 @@
         </div>
       </div>
 
-      <div class="col-3">
+      <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-center mb-3">
         <div class="card border-secondary mb-3" style="max-width: 20rem;">
           <div class="card-header">Calculator</div>
           <div class="card-body">
             <video preload="metadata" onmouseover="this.play()" onmouseout="this.pause();"
-              src="assets/Videos/calculator.mp4" muted="true"></video>
+              src="assets/Videos/calculator.mp4" muted="muted"></video>
           </div>
           <div class="card-footer d-flex justify-content-between">
             <a class="link-icons" href="https://vukkop.github.io/calculator/" target="_blank">link</a>
@@ -185,12 +230,12 @@
         </div>
       </div>
 
-      <div class="col-3">
-        <div class="card border-secondary mb-3" style="max-width: 20rem;">
+      <div class="col-12 col-md-6 col-xl-3 d-flex justify-content-center mb-3">
+        <div class="card border-secondary mb-3 project-card" style="max-width: 20rem;">
           <div class="card-header">Ticking Clock</div>
           <div class="card-body">
             <video preload="metadata" onmouseover="this.play()" onmouseout="this.pause();"
-              src="assets/Videos/ticking-click.mp4" muted="true"></video>
+              src="assets/Videos/ticking-click.mp4" muted="muted"></video>
           </div>
           <div class="card-footer d-flex justify-content-between">
             <a class="link-icons" href="https://vukkop.github.io/ticking-clock/" target="_blank">link</a>
@@ -207,7 +252,8 @@
 
     <form id="contact" class="row mt-5 needs-validation" novalidate autocomplete="off">
       <h2 class="text-light-emphasis mb-4 mt-3">Contact</h2>
-      <div class="col-6">
+
+      <div class="col-12 col-xl-6">
 
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
@@ -222,12 +268,12 @@
 
       </div>
 
-      <div class="col-6">
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea autocomplete="false" class="form-control bg-dark" id="message" placeholder="Write me a message"
-            rows="5" required></textarea>
-        </div>
+      <div class="col-12 col-xl-6 mb-3">
+
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control bg-dark" id="message" placeholder="Write me a message" rows="5"
+          required></textarea>
+
       </div>
 
       <div class="col-12 d-flex justify-content-end">
@@ -242,9 +288,9 @@
       <div class="col-4">
         <a class="nav-link link-icons" href="mailto:koprivica.wolf@gmail.com" target="_blank">
           <i class="bi bi-envelope-fill large"></i>
-          <a class="link-icons" href="mailto:koprivica.wolf@gmail.com" target="_blank">
-            Email
-          </a>
+        </a>
+        <a class="link-icons" href="mailto:koprivica.wolf@gmail.com" target="_blank">
+          Email
         </a>
       </div>
       <div class="col-4">
@@ -265,6 +311,7 @@
       </div>
     </div>
   </div>
+
 
   <!-- Footer -->
   <footer class="mt-5">
