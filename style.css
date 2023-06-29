@@ -8,9 +8,14 @@
   margin-left: 0;
   margin-right: 0;
 }
-
+a{
+  text-decoration: none;
+}
 
 /* Navbar */
+nav.navbar{
+  padding-top: 10px;
+}
 .navbar-brand{
   margin-left: 3%;
 }
@@ -42,7 +47,7 @@
   font-size: 3em;
 }
 .typed-cursor{
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
 .typed-cursor,#autoTyped{
   color: #d4d47d
@@ -119,6 +124,41 @@
   left: 45px;
   font-size: 5rem;
 }
+.html5{
+  top: 45px;
+  left: 50px;
+}
+.css3{
+  top: 45px;
+  left: 44px;
+}
+.bootstrap{
+  top: 41px;
+  left: 36px;
+}
+.vue{
+  top: 45px;
+  left: 45px;
+}
+svg.icon-hex.c{
+  fill: #adb5bd;
+  transition: 500ms;
+  top: 25px;
+  left: 25px;
+  width: 7rem;
+  height: 7rem;
+}
+svg.icon-hex.ts {
+  fill: #adb5bd;
+  transition: 500ms;
+  top: 45px;
+  left: 46px;
+  width: 4.4rem;
+  height: 4.4rem;
+}
+svg.icon-hex:hover{
+  fill: #fff;
+}
 
 /* Projects */
 
@@ -130,4 +170,10 @@
 /* Utility classes */
 .pointer:hover{
   cursor: pointer;
+}
+.mt-5{
+  margin-top: 50px;
+}
+.mb-5{
+  margin-bottom: 50px;
 }
