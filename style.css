@@ -68,9 +68,6 @@
 
 /* Hexagon */
 .hex-main {
-  /* position: absolute;
-  margin-top: 35px;
-  margin-left: 110px; */
   display: flex;
     --s: 160px;
     /* size  */
