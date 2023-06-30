@@ -250,12 +250,7 @@ svg.icon-hex:hover{
     font-size: 2rem;
   }
 }
-@media (max-width: 675px) {
-  .hex-container {
-    margin-bottom: 10%;
-  }
-}
-@media (max-width: 498px) {
+@media (max-width: 473px) {
   .hex-container {
     margin-bottom: 40%;
     height: 1414px;
