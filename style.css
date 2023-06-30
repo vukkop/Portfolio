@@ -1,7 +1,11 @@
-.container-fluid {
+/* .container-fluid {
   padding: 0;
   margin-left: auto;
   margin-right: auto;
+} */
+*{
+  box-sizing: border-box !important;
+  scrollbar-width: none;
 }
 .row,
 .col {
