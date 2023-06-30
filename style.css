@@ -6,6 +6,10 @@
 *{
   box-sizing: border-box !important;
   scrollbar-width: none;
+  border: 1px red dotted;
+}
+html{
+  width: 100%;
 }
 .row,
 .col {
