@@ -222,6 +222,11 @@ svg.icon-hex:hover{
 }
 }
 
+@media (max-width: 1200px) {
+  .col-l {
+    padding-top: 2%;
+  }
+}
 @media (max-width: 875px) {
 .hex-container {
   margin-bottom: 25%;
@@ -235,6 +240,14 @@ svg.icon-hex:hover{
     margin-bottom: 25%;
   }
 }
+@media (max-width: 767px) {
+  .landing-page-heading {
+    font-size: 2rem;
+  }
+  .large{
+    font-size: 2rem;
+  }
+}
 @media (max-width: 675px) {
   .hex-container {
     margin-bottom: 10%;
@@ -246,14 +259,15 @@ svg.icon-hex:hover{
     height: 1412px;
   }
 }
-
-
-
-@media (min-width: 860px) {
-  .hex-container {
-    margin-left: 5%;
-  }
+@media (max-width: 438px) {
+  .landing-page-heading {
+      font-size: 1.8rem;
+    }
 }
+
+
+
+
 @media (min-width: 1640px) {
   .hex-container {
     margin-left: 7%;
