@@ -176,6 +176,10 @@ svg.icon-hex:hover{
   width: 250px;
 }
 
+/* Footer */
+.nav-item-bottom {
+  margin: 0px;
+}
 
 /* Utility classes */
 .pointer:hover{
@@ -191,22 +195,27 @@ svg.icon-hex:hover{
 /* Media */
 
 @media (min-width: 2400px) {
-.container-fluid{
+.container-fluid-nav{
     padding: 0% 20%;
 }
 }
 @media (max-width: 2399px) {
-.container-fluid{
+.container-fluid-nav{
     padding: 0% 10%;
 }
 }
 @media (max-width: 1800px) {
-.container-fluid{
+.container-fluid-nav{
   padding: 0% 5%;
 }
 }
 @media (max-width: 1630px) {
-.container-fluid{
+.container-fluid-nav{
+  padding: 0%;
+}
+}
+@media (max-width: 1400px) {
+.container-fluid-nav{
   padding: 0%;
 }
 }
@@ -215,19 +224,12 @@ svg.icon-hex:hover{
     margin-bottom: 10%;
   }
 }
-@media (max-width: 1400px) {
-.container-fluid{
-  padding: 0%;
-}
-}
-
 @media (max-width: 1200px) {
 .project-card-row{
   width: 78%;
   margin: auto;
 }
 }
-
 @media (max-width: 1200px) {
   .col-l {
     padding-top: 2%;
@@ -254,6 +256,12 @@ svg.icon-hex:hover{
     font-size: 2rem;
   }
 }
+@media (max-width: 509px) {
+  .bottom{
+    font-size: 0.9rem;
+    padding: 8px 8px;
+  }
+}
 @media (max-width: 473px) {
   .hex-container {
     margin-bottom: 40%;
@@ -265,8 +273,12 @@ svg.icon-hex:hover{
       font-size: 1.8rem;
     }
 }
+
+
+
+/* Height */
 @media (max-height: 586px) {
   .col-l {
-      padding-top: 0%;
-    }
+    padding-top: 0%;
+  }
 }
